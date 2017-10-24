@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Exercice 8</title>     
+    </head>
+    <body>
+        <form>
+            <label for="age">Votre âge : </label><input type="text" id="age" name="age"/><br/>
+            <button id="valider" name="valider" onclick="verification()">Valider</button>
+        </form>
+        <script>
+            function verification(){
+                var age = document.getElementById('age').value;
+                if (age <= 0) { 
+                    alert("Te fous pas de moi.");
+                } else if (1 <= age && age < 18) {
+                    alert("Tu es mineur, désolé pour toi mon grand !");
+                } else if (age >= 18) {
+                    alert("Tu es majeur ! Tu peux accéder à mon contenu :D");
+                } else { 
+                    alert("Je t'ai demandé ton âge !");}
+                }
+        </script>
+    </body>
+</html>
